@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CP1_LeliaSalles/css/style.css">
+    <title>Claves Musicais</title>
+</head>
+<main>
+
+
+<body>
+    <h1>Claves Musicais</h1>
+    <p>A clave musical serve para dar nome as notas musicais. Saber sobre a posição das claves no pentagrama é essencial para aprender no nome das notas. </p>
+    <p>São três as claves musicais para aprender: clave de sol, clave de fá e clave de dó. </p>      
+    
+    <p>Escolha a clave que quer aprender:</p>
+
+
+     
+    <form action="#">
+
+      <ol>
+        <li>
+          <label for="sol">Clave de Sol</label>
+          <input type="radio" name="grupo" id="sol">
+        </li>
+        <li>
+          <label for="fa">Clave de Fá</label>
+          <input type="radio" name="grupo" id="fa">
+        </li>
+        <li>
+          <label for="do">Clave de Dó</label>
+          <input type="radio" name="grupo" id="doh">
+
+        </li>
+   
+      
+      
+      
+      <p>
+        <label for="descricao"></label>
+        <textarea name="texto" id="descricao" cols="30" rows="10" onclick="descricao()">Escreva uma descrição</textarea>
+
+      </p>
+      <p>
+        <label for="clique">Clique no botão</label>
+        <input type="button" value="Enviar" onclick="enviar()" >
+        <input type="reset" value="Reset" onclick="resetar()">
+      </p>
+     </ol>  
+    </form>
+    <hr>   
+   
+   
+  <h2>O seu texto:</h2>
+
+  <p id="userTxt"></p>
+  
+
+  
+  <img src="/CP1_LeliaSalles/img/sol.png" alt="Clave de Sol">
+  <img src="/CP1_LeliaSalles/img/fa.png" alt="Clave de Fá">
+  <img src="/CP1_LeliaSalles/img/do.png" alt="Clave de Dó">
+   
+    <script src="/CP1_LeliaSalles/js/script.js"></script>
+</body>
+</main>
+</html>
