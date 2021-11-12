@@ -1,60 +1,25 @@
-let sol = document.querySelector('sol');
-let fa = document.querySelector('fa');
-let doh = document.querySelector('doh');
-
-let descricao = document.getElementById('descricao');
+let capturando = "";
+let resetando = document.getElementById('nome').value;
 
 
 
+function capturar(){
 
-function userInput(){
-    document.getElementById('userTxt').outerHTML
-}
+    capturando = document.getElementById('input').value;
+    document.getElementById('userInput').innerHTML = capturando;
+    
 
+    if(document.getElementById('input').value === "sol"){
+        document.getElementById('img').src = '/CP1_LeliaSalles/img/sol.png';
+    }else if(document.getElementById('input').value === "fá"){
+        document.getElementById('img').src = '/CP1_LeliaSalles/img/fa.png';
 
-
-function enviar(){
-    if(document.sol.checked == true && userInput == true){
-
-
-
-        
-    }else if(document.getElementById('fa').checked == true && userInput == true){
-
-
-
-    }else if(document.getElementById('do').checked == true && userInput == true){
-
-
-
+    }else if(document.getElementById('input').value === "dó"){
+        document.getElementById('img').src = '/CP1_LeliaSalles/img/do.png';
+    }else if(document.getElementById('input').value != "sol" && document.getElementById('input').value != "fá" && document.getElementById('input').value != "dó"){
+        alert("Para conhecer as claves digite as seguintes palavras: sol, fá, ou dó");
     }else{
-
-    }
-   
-}
-
-   
-
-
-function resetar(){
-
-    document.getElementById('resetar').innerHTML = "";
-
-}
-
-
-
-/*function enviar((document.getElementById('sol').checked == false && document.getElementById('fa').checked == false && document.getElementById('do').checked == false)){
-
-    if(document.getElementById('sol').checked == false && document.getElementById('fa').checked == false && document.getElementById('do').checked == false){
-
-        alert("Escolha uma opção")
-
-        
-
-    }else{
-
-     
+       
     }
 
- */  
+}
