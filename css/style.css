@@ -1,3 +1,10 @@
-h1, h2, p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+h1, h2, p {
+    font-family: Verdana;
+}
+
+#userInput{
+
+    font-family: Verdana;
+    font-size: 28px;
+
 }
